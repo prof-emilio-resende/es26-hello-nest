@@ -1,0 +1,15 @@
+<form method='post'>
+  {{#with data}}
+    <label>Altura</label>
+    <input value='{{height}}' id='height' name='height' />
+    <br />
+    <label>Peso</label>
+    <input value='{{weight}}' id='weight' name='weight' />
+    <br />
+    <hr />
+    <button type='submit'>calcular</button>
+    {{#if imc}}
+        <span>{{imc}}</span> : <strong>{{imcDescription}}</strong>
+    {{/if}}
+  {{/with}}
+</form>
